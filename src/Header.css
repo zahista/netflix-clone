@@ -1,0 +1,54 @@
+
+.header__banner{
+    display: flex;
+    align-items: center;
+    color: white;
+    height: 70vh;
+    position: relative;
+}
+.header_top{
+    background-color: #141414;
+    width: 100%;
+    padding-inline: 20px;
+    padding-left: 30px;
+}
+
+.header_logo{
+    width: 36px;
+}
+
+.header__movieOverview{
+    max-width: 60ch;
+}
+
+.header__movieName{
+    font-size: 48px;
+    font-weight: 800;
+    padding-bottom: 16px;
+}
+
+.header__LeftSide{
+    display: flex;
+    align-items: center;
+    align-items: center;
+    height: 100%;
+    background-image: linear-gradient(to right, #141414, rgba(255, 255, 255, 0));
+    padding-left: 80px;
+}
+
+.header__bottomGradient{
+    position: absolute;
+    bottom: 0;
+    height: 30%;
+    width: 100%;
+    background-image: linear-gradient(to top, #141414, rgba(255, 255, 255, 0));
+}
+
+button{
+    font-size: 18px;
+    display: flex;
+    padding: 8px;
+    width: 128px;
+    margin-top: 48px;
+    align-items: center;
+}

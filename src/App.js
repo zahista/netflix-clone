@@ -1,23 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+/* eslint-disable no-unused-vars */
+import Row from "./Row";
+import Header from "./Header";
+import React from "react";
+import requests from "./endpoints";
+import "./App.css"
 
 function App() {
+  
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+      <Header fetchURL={requests.fetchNetflixOriginals} />
+      
+      <Row
+        isLargeRow
+        title="Netflix Originals"
+        fetchURL={requests.fetchNetflixOriginals}
+      />
+      <Row
+        title="Top rated"
+        fetchURL={requests.fetchTopRated}
+      />
+      <Row
+        title="Trending now"
+        fetchURL={requests.fetchTrending}
+      />
+      <Row
+        title="Action movies"
+        fetchURL={requests.fetchActionMovies}
+      />
     </div>
   );
 }
